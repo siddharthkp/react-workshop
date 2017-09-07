@@ -1,0 +1,17 @@
+{
+  "name": "react-workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node scripts/setup"
+  },
+  "keywords": [],
+  "author": "siddharthkp",
+  "license": "MIT",
+  "repository": "siddharthkp/react-workshop",
+  "dependencies": {
+    "chalk": "2.1.0",
+    "prettycli": "1.4.3",
+    "sync-exec": "0.6.2"
+  }
+}

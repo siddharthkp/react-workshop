@@ -1,0 +1,15 @@
+{
+  "name": "3-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "keywords": [],
+  "author": "siddharthkp",
+  "license": "MIT",
+  "dependencies": {
+    "open": "0.0.5"
+  }
+}

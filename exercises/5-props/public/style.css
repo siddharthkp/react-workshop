@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+
+body,
+input,
+button {
+  font-family: 'Nunito', sans-serif;
+}
+
+.header {
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 50px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+.logo.big {
+  height: 60px;
+  width: 60px;
+}
+
+.user-info,
+.repositories {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 10px auto;
+  padding: 30px 20px;
+  width: 500px;
+  min-height: 100px;
+}
+
+.user-info .logo {
+  display: block;
+  margin: 30px auto;
+}
+
+input {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+}
+
+input:hover,
+input:focus {
+  border-color: #2cc1ed;
+}
+
+button,
+.button {
+  background: #2cc1ed;
+  border: 1px solid #1d99bd;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  background: #229bbf;
+}
+
+img.avatar {
+  height: 100px;
+}
+
+.user-info .name {
+  display: block;
+  text-decoration: none;
+  margin: 10px;
+  color: #2cc1ed;
+  font-size: 18px;
+}
+
+.description {
+  color: #777;
+  font-size: 12px;
+}
+
+.repo {
+  text-align: left;
+  padding: 10px 0;
+}
+.repo .name {
+  text-decoration: none;
+  color: #2cc1ed;
+}
+.repo .stars {
+  float: right;
+}
+.repo .stars::after {
+  content: ' \2605';
+  color: gold;
+}
+
+.clear {
+  clear: both;
+}

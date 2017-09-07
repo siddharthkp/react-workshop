@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+
+body,
+input,
+button {
+  font-family: 'Nunito', sans-serif;
+}
+
+.value {
+  font-size: 64px;
+  padding: calc(50vh - 64px) 50vw;
+  cursor: pointer;
+}

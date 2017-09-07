@@ -1,0 +1,25 @@
+{
+  "name": "17-homework",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "0.16.2",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "serve": "5.2.1"
+  },
+  "devDependencies": {
+    "chai": "4.0.2",
+    "enzyme": "2.9.1",
+    "jsdom": "11.0.0",
+    "jsdom-global": "3.0.2",
+    "react-addons-test-utils": "15.6.0",
+    "react-scripts": "1.0.13",
+    "react-test-renderer": "15.5.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "coverage": "react-scripts test --coverage"
+  }
+}
