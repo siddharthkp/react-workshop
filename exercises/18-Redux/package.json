@@ -15,10 +15,6 @@
   },
   "author": "Manjula Dube",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vihangpatel/react-redux-simple-boilerplate/issues"
-  },
-  "homepage": "https://github.com/vihangpatel/react-redux-simple-boilerplate#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.2",
