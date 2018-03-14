@@ -1,9 +1,13 @@
+
 import axios from 'axios'
 
-const getData = username => {
+export const get = (url, params) => {
   return axios
-    .get(`https://github-user.now.sh?username=${username}`)
-    .then(response => response.data)
+    .get(url, params)
 }
 
-export default getData
+export const post = (url, params) => {
+  return axios
+    .post(url, params)
+}
+

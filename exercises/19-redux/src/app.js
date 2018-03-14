@@ -3,7 +3,6 @@ import Header from './components/header'
 import UserForm from './components/user-form'
 import UserInfo from './components/user-info'
 import Repositories from './components/repositories'
-import fetchData from './data-fetcher'
 
 class App extends React.Component {
   constructor(props) {

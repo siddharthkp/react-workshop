@@ -125,3 +125,7 @@ img.avatar {
 .clear {
   clear: both;
 }
+
+.busy {
+  opacity: 0.2;
+}

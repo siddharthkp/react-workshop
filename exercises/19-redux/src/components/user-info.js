@@ -1,14 +1,22 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-const UserInfo = props =>
+const UserInfo = ({repoDetail}) =>
   <div className="section user-info">
-    <img className="avatar" src={props.avatar} />
-    <a className="name" href={props.url}>
-      {props.name}
+    <img className="avatar" src={repoDetail.avatar} />
+    <a className="name" href={repoDetail.url}>
+      {repoDetail.name}
     </a>
     <div className="description">
-      {props.description}
+      {repoDetail.description}
     </div>
   </div>
 
-export default UserInfo
+
+function mapStateToProps(state) {
+  return {
+      repoDetail : state.home.repoDetails || {}
+  }
+}
+
+export default connect(mapStateToProps)(UserInfo)

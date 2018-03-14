@@ -1,6 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import AppRouter from './router'
+import React from "react"
+import ReactDOM from "react-dom"
+import AppRouter from "./router"
+import { Provider } from "react-redux"
 
-const data = {}
-ReactDOM.render(<AppRouter />, document.getElementById('root'))
+import configureStore from "./store"
+
+// configureStore , which encapsulates all reducers
+const store = configureStore({})
+
+// Wrap <Main /> Component inside the <Provider/>  to avail store to all child Components
+ReactDOM.render(
+  <Provider store={store}>
+    <AppRouter />
+  </Provider>,
+  document.getElementById("root")
+)

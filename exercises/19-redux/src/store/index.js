@@ -1,7 +1,7 @@
 /**
  * Node module imports
  */
-import { createStore, applyMiddleware, compose } from 'redux'
+import { createStore } from 'redux'
 
 
 /**
