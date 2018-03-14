@@ -1,18 +1,18 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-const Repo = repoDetail =>
+const Repo = props =>
   <div className="repo">
-    <a className="name" href={repoDetail.url}>
-      {repoDetail.name}
+    <a className="name" href={props.url}>
+      {props.name}
     </a>
     <div className="stars">
-      {repoDetail.stars}
+      {props.stars}
     </div>
     <div className="clear" />
   </div>
 
-const Repositories = repoDetail =>
+const Repositories = ({repoDetail}) =>
   <div className="section repositories">
     {repoDetail.repos &&
       repoDetail.repos.map((repo, index) =>
@@ -21,6 +21,7 @@ const Repositories = repoDetail =>
   </div>
 
 function mapStateToProps(state) {
+  console.log(state.home.repoDetails)
   return {
       repoDetail : state.home.repoDetails || {}
   }
