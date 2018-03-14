@@ -1,15 +1,22 @@
-import React, { Component } from 'react'
-
+import React, { Component } from "react"
+import { connect } from "react-redux"
 
 class SearchHistory extends Component {
+    renderList() {
+        console.log(this.props.history)
+        return this.props.history.map(searchedItem => <li> {searchedItem.username} </li>)
+    }
 
- 
-  render()  {
-    return (
-      <div>
-        SearchHistory
-      </div>
-    )
-  }
+    render() {
+        return <div>{this.renderList()}</div>
+    }
 }
-export default SearchHistory
+
+function mapStateToProps(state) {
+    console.log(state)
+    return {
+        history: state.home.history,
+    }
+}
+
+export default connect(mapStateToProps)(SearchHistory)

@@ -18,7 +18,7 @@ export default function(state = {
               return {
                 ...state,
                 repoDetails : action.data,
-                history: [...state.history, action.data.userInfo]
+                history: [...state.history, action.data]
               }
           
           default: 
